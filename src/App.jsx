@@ -1,22 +1,14 @@
-import Person from "./components/Person.jsx";
-import Product from "./components/Product.jsx";
-import Card from "./components/Card.jsx";
+import Weather from "./components/Weather.jsx"
+import UserStatus from "./components/UserStatus.jsx";
+import Greeting from "./components/Greeting.jsx";
+
 const App = () => {
 
   return (
     <div>
-      <Card>
-        <h1>My card</h1>
-        <p>Some content for card 1</p>
-      </Card>
-      <Card>
-        <h1>My card 2</h1>
-        <p>Some content for card 2</p>
-      </Card>
-      <Card>
-        <h1>My card 3</h1>
-        <p>Some content for card 3</p>
-      </Card>
+      <Weather temperature={20} />
+      <UserStatus isAdmin={true} loggedIn={true} />
+      <Greeting timeOfDay="morning" />
     </div>
   );
 
