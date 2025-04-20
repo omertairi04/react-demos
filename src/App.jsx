@@ -1,17 +1,19 @@
-import Weather from "./components/Weather.jsx"
-import UserStatus from "./components/UserStatus.jsx";
-import Greeting from "./components/Greeting.jsx";
-
+import {useState} from "react";
+import Counter from './components/Counter.jsx'
+import ToDoList from "./components/ToDoList.jsx";
+import Profile from "./components/Profile.jsx";
+import ShoppingList from "./components/ShoppingList.jsx";
 const App = () => {
 
-  return (
-    <div>
-      <Weather temperature={20} />
-      <UserStatus isAdmin={true} loggedIn={true} />
-      <Greeting timeOfDay="morning" />
-    </div>
-  );
-
+  return <div>
+    {/*<Counter />*/}
+    {/*<hr/>*/}
+    {/*<ToDoList />*/}
+    {/*<hr/>*/}
+    {/*<Profile />*/}
+    <hr/>
+    <ShoppingList />
+  </div>;
 };
 
 export default App;
